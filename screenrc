@@ -1,0 +1,24 @@
+#hardstatus alwayslastline "%{= dR} %-Lw%50>%{= dG}%n%f* %{= dW}%t%{= dR}%+Lw%<"
+#term screen-256color
+startup_message off
+bindkey -k k1 prev
+bindkey -k k2 next
+caption always "%{rW}%?%-Lw%?%{-b}(%{+b}%n %t%{-b})%{-b}%?(%u)%?%{rW}%?%+Lw%?%="
+hardstatus alwayslastline "%{db}[%{+b}%h%{-b}]%= %{db}[%{+b}%m-%d-%y %c%{-b}]"
+
+bindkey "^[[1;5D" prev
+bindkey "^[[1;5C" next
+bindkey "^[[15D" prev
+bindkey "^[[15C" next
+bindkey "^[Od" prev  # change window with ctrl-left
+bindkey "^[Oc" next  # change window with ctrl-right
+
+bindkey "^[[1;5A" resize -1
+bindkey "^[[1;5B" resize +1
+
+bindkey "^t" screen
+
+#screen -t psql -- psql template1
+#screen -t irb -- irb
+screen -t local
+
