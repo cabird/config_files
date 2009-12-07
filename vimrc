@@ -3,7 +3,7 @@ if exists('g:global_vimrc')
 endif
 let g:global_vimrc = 1
 
-set et ts=4 sw=4 ai
+set expandtab tabstop=4 autoindent shiftwidth=4 softtabstop=4
 
 set cursorline
 set number "show line numbers
