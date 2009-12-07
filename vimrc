@@ -5,6 +5,9 @@ let g:global_vimrc = 1
 
 set expandtab tabstop=4 autoindent shiftwidth=4 softtabstop=4
 
+set list
+set listchars=tab:»·
+"		testing the tab character 
 set cursorline
 set number "show line numbers
 set vb "visual bell
